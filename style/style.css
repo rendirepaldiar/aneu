@@ -5,24 +5,17 @@ html {
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
-  overflow-x: hidden;
 }
 
-
 .container {
-  min-height: 100vh;
-  width: 100%;
+  height: 100vh;
+  width: 100vh;
   margin: 0 auto;
   text-align: center;
   visibility: hidden;
   position: relative;
-  overflow-x: hidden;
-  overflow-y: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  overflow: hidden;
 }
-
 
 .container div.six {
   top: 10vh;
@@ -31,18 +24,18 @@ body {
 
 .container div.seven,
 .container div.eight {
-  width: 100%;
-  height: auto;
-  position: relative;
-  top: auto;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
 }
 
 .container > div {
-  position: relative;
-  width: 100%;
-  padding: 20px 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 20vh;
 }
-
 
 .one {
   font-size: 4.5rem;
@@ -303,24 +296,5 @@ body {
   .nine p {
     font-size: 1.5rem;
     font-weight: lighter;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .four .text-box {
-    width: 90%;
-    font-size: 0.9rem;
-  }
-
-  .wish h5 {
-    font-size: 1.2rem;
-  }
-
-  .idea-5 span {
-    font-size: 2.5rem;
-  }
-
-  .idea-6 span {
-    font-size: 5rem;
   }
 }
